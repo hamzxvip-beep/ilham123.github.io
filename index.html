@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Ilham</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: lightblue;
+            padding-top: 50px;
+        }
+
+        img {
+            width: 250px;
+            transition: 0.5s;
+        }
+
+        .sembunyi {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>selamat datang di Website Ilham 🔥</h1>
+
+    <button onclick="toggleGambar()">Klik Saya</button>
+
+    <br><br>
+
+    <img id="gambarSaya" src="foto.jpg" class="sembunyi">
+
+    <script>
+        function toggleGambar() {
+            var gambar = document.getElementById("gambarSaya");
+            gambar.classList.toggle("sembunyi");
+        }
+    </script>
+
+</body>
+</html>
